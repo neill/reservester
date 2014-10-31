@@ -1,0 +1,9 @@
+<h1>Add a new restaurant:</h1>
+<br/>
+<div>
+<%= form_for(@restaurant) do |f| %>
+    <%= label_tag(:city, "City:") %>
+    <%= text_field_tag(:city) %>
+    <%= submit_tag("Add Restaurant") %>
+<% end %>
+</div>
