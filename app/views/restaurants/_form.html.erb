@@ -1,4 +1,4 @@
-<div>
+<div class="formalizer">
 <%= form_for(@restaurant, multipart: true) do |f| %>
     <% if @restaurant.errors.any? %>
         <div>
@@ -32,7 +32,7 @@
     <%= f.label :phonenumber %>
     <%= f.text_field :phonenumber %><br>
 
-    <%= f.submit("Add Restaurant") %>
+    <%= f.submit edit_or_add_restaurant, class: 'submit-bttn' %>
 <% end %>
 
 </div>
