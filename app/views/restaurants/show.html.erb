@@ -1,0 +1,13 @@
+<h1><%= @restaurant.name %></h1>
+
+<div>
+<%= @restaurant.description %><br/>
+<%= @restaurant.street %><br/>
+<%= @restaurant.city %>, <%= @restaurant.state %><br/>
+<%= @restaurant.zipcode %><br/>
+<%= @restaurant.phonenumber %><br/>
+</div><br/><br/>
+<%= link_to edit_restaurant_path do %>
+Edit
+<% end %><br/>
+<%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141031153510) do
+ActiveRecord::Schema.define(version: 20141031181602) do
 
   create_table "restaurants", force: true do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "name"
+    t.string   "state"
+    t.text     "description"
+    t.string   "zipcode"
+    t.string   "city"
+    t.string   "phonenumber"
+    t.string   "street"
   end
 
 end
