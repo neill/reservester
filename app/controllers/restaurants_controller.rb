@@ -9,6 +9,9 @@ class RestaurantsController < ApplicationController
 
     def new
         @restaurant = Restaurant.new
+        respond_to do |format|
+            format.js
+        end
     end
 
     def create
