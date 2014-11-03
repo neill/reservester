@@ -5,6 +5,9 @@ class RestaurantsController < ApplicationController
 
     def show
         @restaurant = Restaurant.find(params[:id])
+        respond_to do |format|
+            format.js
+        end
     end
 
     def new
@@ -26,6 +29,9 @@ class RestaurantsController < ApplicationController
 
     def edit
         @restaurant = Restaurant.find(params[:id])
+        respond_to do |format|
+            format.js
+        end
     end
 
     def update

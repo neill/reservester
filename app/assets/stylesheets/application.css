@@ -13,27 +13,37 @@
  *= require_tree .
  *= require_self
  */
-body {
-    padding: 0;
-    margin: 0;
+
+html, body {
+    margin: 0px;
+    padding: 0px 0px;
+    height: 100%;
     font-family: 'Arial', sans-serif;
 }
 
 .nav{
     background-color: #f7f8f8;
     display: table-cell;
-    border-radius:5px;
+    border-radius:0px;
+    padding-top: 0px;
+    margin-top: 0px;
     width: 33%;
+    height: 100%;
 }
 
-.section{
+#section{
     display: table-cell;
-    border-radius:5px;
+    border-radius:0px;
+}
+
+p {
+    margin-right: 70px;
 }
 
 .wrapper {
     display: table;
     width: 100%;
+    height: 100%;
 }
 
 .middle {
@@ -45,11 +55,19 @@ body {
     background-color: #335CAD;
     color: white;
     font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 0px;
+    z-index: 999;
 }
 
 .header h1 {
     margin: 0;
     padding: 0.25em 0.5em;
+}
+
+.header h3 {
+    margin: 0px;
+    padding: 0px;
 }
 
 input[type=text] {

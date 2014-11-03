@@ -7,20 +7,21 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
-<!-- <header class="header">
-<h1>Reservester</h1>
-</header> -->
 <body>
 <div class="wrapper">
     <div class="nav">
-        <h1>Reservester</h1>
+        <div class="header">
+            <h1>Reservester</h1>
+        </div>
         <ul>
-    <% @restaurants.each do |restaurant| %>
-    <li>
-        <%= link_to restaurant.name, restaurant %>
-    </li>
-    <% end %>
-</ul>
+        <% @restaurants.each do |restaurant| %>
+        <li>
+            <%= link_to restaurant.name, restaurant, remote: true %>
+        </li>
+        <% end %>
+        </ul><br>
+        <br>
+        <%= link_to "Add a new Restaurant.", new_restaurant_path, remote: true %>
     </div>
     <div class="middle"></div>
     <div id="section">

@@ -1,9 +1,4 @@
-<ul>
-    <% @restaurants.each do |restaurant| %>
-    <li>
-        <%= link_to restaurant.name, restaurant %>
-    </li>
-    <% end %>
-</ul>
-
-<%= link_to "Add a new Restaurant.", new_restaurant_path, remote: true %>
+<h1>Welcome to Reservester!</h1>
+<p>This is a full fledged ruby CRUD app for restaurants.</p>
+<p>I have implemented ruby partials with AJAX to allow
+    one single page for all content. Feel free to click anywhere on the left to add a restaurant, or view a current entry and update it to your needs. Or delete it you jerk!</p>
