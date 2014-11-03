@@ -3,6 +3,12 @@ class RestaurantsController < ApplicationController
         @restaurants = Restaurant.all
     end
 
+    def welcome
+        respond_to do |format|
+            format.js
+        end
+    end
+
     def show
         @restaurant = Restaurant.find(params[:id])
         respond_to do |format|
