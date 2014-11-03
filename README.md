@@ -1,28 +1,13 @@
-== README
+Reservester
+======
+**Reservester** - Fall 2014 SI Boston Web Dev Project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a full fledged restaurant directory app developed during Startup Institute's Web Dev program in Fall 2014.
 
-Things you may want to cover:
+## Features
+* [Version X.Y](https://github.com/username/sw-name/archive/master.zip)
+* Other Versions
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+### Possible extentions
+A few possible things that could be added to perfect this program:
+NOTHING, IT'S GREAT! :thumbsup:
