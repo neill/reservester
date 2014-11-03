@@ -15,7 +15,7 @@
  */
 
 html, body {
-    margin: 0px;
+    margin: 0px 0px;
     padding: 0px 0px;
     height: 100%;
     font-family: 'Arial', sans-serif;
@@ -23,16 +23,17 @@ html, body {
 
 .nav{
     background-color: #f7f8f8;
-    display: table-cell;
+    display: block;
     border-radius:0px;
     padding-top: 0px;
     margin-top: 0px;
     width: 33%;
     height: 100%;
+    float: left;
 }
 
 #section{
-    display: table-cell;
+    display: block;
     border-radius:0px;
 }
 
@@ -41,13 +42,14 @@ p {
 }
 
 .wrapper {
-    display: table;
+    display: block;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
 .middle {
-    display: table-cell;
+    display: block;
     width: 10%;
 }
 
