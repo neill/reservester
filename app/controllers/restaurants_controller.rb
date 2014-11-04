@@ -27,7 +27,7 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.new restaurant_params
 
         if @restaurant.save
-            redirect_to @restaurant
+            redirect_to restaurants_path
         else
             render action: 'new'
         end
@@ -44,7 +44,9 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.find(params[:id])
 
         if @restaurant.update restaurant_params
-            redirect_to @restaurant
+            respond_to do |format|
+                format.js
+            end
         else
             render action: 'edit'
         end
