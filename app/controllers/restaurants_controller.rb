@@ -3,50 +3,38 @@ class RestaurantsController < ApplicationController
         @restaurants = Restaurant.all
     end
 
-    def welcome
-        respond_to do |format|
-            format.js
-        end
-    end
-
     def show
+        @restaurants = Restaurant.all
         @restaurant = Restaurant.find(params[:id])
-        respond_to do |format|
-            format.js
-        end
     end
 
     def new
+        @restaurants = Restaurant.all
         @restaurant = Restaurant.new
-        respond_to do |format|
-            format.js
-        end
     end
 
     def create
+        @restaurants = Restaurant.all
         @restaurant = Restaurant.new restaurant_params
 
         if @restaurant.save
-            redirect_to restaurants_path
+            redirect_to @restaurant
         else
             render action: 'new'
         end
     end
 
     def edit
+        @restaurants = Restaurant.all
         @restaurant = Restaurant.find(params[:id])
-        respond_to do |format|
-            format.js
-        end
     end
 
     def update
+        @restaurants = Restaurant.all
         @restaurant = Restaurant.find(params[:id])
 
         if @restaurant.update restaurant_params
-            respond_to do |format|
-                format.js
-            end
+            redirect_to @restaurant
         else
             render action: 'edit'
         end

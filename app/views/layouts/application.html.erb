@@ -16,12 +16,12 @@
         <ul>
         <% @restaurants.each do |restaurant| %>
         <li>
-            <%= link_to restaurant.name, restaurant, remote: true %>
+            <%= link_to restaurant.name, restaurant %>
         </li>
         <% end %>
         </ul><br>
         <br>
-        <%= link_to "Add a new Restaurant.", new_restaurant_path, remote: true %>
+        <%= link_to "Add a new Restaurant.", new_restaurant_path %>
     </div>
     <div id="section">
         <%= yield %>

@@ -7,7 +7,6 @@
 <%= @restaurant.zipcode %><br/>
 <%= @restaurant.phonenumber %><br/>
 </div><br/><br/>
-<%= link_to "Edit", edit_restaurant_path, remote: true %>
-<br/>
-<%= link_to 'Back', restaurants_path %>
+<%= link_to "Edit", edit_restaurant_path %><br/>
+<%= link_to 'Home', restaurants_path %><br/>
 <%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
