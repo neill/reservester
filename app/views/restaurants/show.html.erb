@@ -7,6 +7,10 @@
 <%= @restaurant.zipcode %><br/>
 <%= @restaurant.phonenumber %><br/>
 </div><br/><br/>
+
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<%= @restaurant.street %>%2C<%= @restaurant.city %>%2C<%= @restaurant.state %>%2CUnited%20States&key=AIzaSyBHXd4HRE6iBrJ9ol7aSKw6R0iNTi7GPjY"></iframe>
+
+<br/><br/><br/>
 <%= link_to "Edit", edit_restaurant_path %><br/>
 <%= link_to 'Home', restaurants_path %><br/>
 <%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
