@@ -103,9 +103,11 @@ label {
     font-size: 10pt;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
     .nav {
         float: none;
+        width: 100%;
+        height: auto;
     }
     .section {
         float: none;
